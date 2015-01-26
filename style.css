@@ -21,3 +21,27 @@ body {
   height:auto;
   margin-top: 20px;
 }
+
+li {
+	display: block;
+	margin-top: 10px;
+}
+
+input {
+	margin-top: 10px;
+}
+
+select {
+	margin-top: 10px;
+}
+
+div {
+	margin-top: 20px;
+}
+
+#container {
+	min-width: 310px; 
+	height: 400px; 
+	max-width: 600px; 
+	margin: 0 auto;
+}
