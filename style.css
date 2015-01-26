@@ -21,3 +21,19 @@ body {
   height:auto;
   margin-top: 20px;
 }
+#minitree {
+  width:10%;
+  height:auto;
+  margin-top: 10px;
+}
+#tipshead {
+	font-size: 4em;
+	color: green;
+	text-align: center;
+}
+#list {
+	font-family: Verdana;
+	margin-left: 30px;
+	text-align:left;
+	font-size: 1.5em;
+}
