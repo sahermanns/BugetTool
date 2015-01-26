@@ -1,0 +1,23 @@
+
+body {
+	background-color: black;
+	color: white;
+	font-family: Impact;
+	text-align: center;
+}
+#splashH1 {
+	font-size: 5em;
+	text-align: center;
+	color: green;
+	margin-bottom: 10px;
+}
+#splashH2 {
+	font-size:1em;
+	color: green;
+	text-align: center;
+}
+#moneytree {
+  width:35%;
+  height:auto;
+  margin-top: 20px;
+}
