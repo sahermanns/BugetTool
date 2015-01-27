@@ -1,54 +1,93 @@
-var objPrice = $('#input2').val();
-
-var category = $('#select1').val();
-
+var answer;
+var input;
+var income;
 
 function listIncome() {
-	var income = $('#input1').val();
+	income = $('#input1').val();
  	$('#showIncome').append(income);
 }
 
 function outputResults() {
-	var answer = $('#select1').val();
-	var input = $('#input2').val();
-	var income = $('#input1').val();
+	answer = $('#select1').val();
+	input = Number($('#input2').val());
 
 	switch (answer) {
 	  case "food":
-	    $('#showFood').append(input);
-	    break;
+		  if (Number($('#showFood').html()) > 0) {
+		  	input += Number($('#showFood').html());
+		  }
+		    console.log($('#showFood').html(input));
+		    input = Number($('#input2').val());
+		    break;
 	  case "entertainment":
-	    $('#showEntertainment').append(input);
-	    break;
+	    if (Number($('#showEntertainment').html()) > 0) {
+	  		input += Number($('#showEntertainment').html());
+	  	}
+		    $('#showEntertainment').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "transportation":
-	    $('#showTransportation').append(input);
-	    break;
+	    if (Number($('#showTransportation').html()) > 0) {
+	  		input += Number($('#showTransportation').html());
+	  	}
+		    $('#showTransportation').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "fixed":
-	    $('#showFixed').append(input);
-	    break;
+	    if (Number($('#showFixed').html()) > 0) {
+	  		input += Number($('#showFixed').html());
+	  	}
+		    $('#showFixed').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "mortgage":
-	  	$('#showMortgage').append(input);
-	  	break;
+	  	if (Number($('#showMortgage').html()) > 0) {
+	  		input += Number($('#showMortgage').html());
+	  	}
+		    $('#showMortgage').html(input);
+		    input = Number($('#input2').val());
+		  	break;
 	  case "utilities":
-	    $('#showUtilities').append(input);
-	    break;
+	    if (Number($('#showUtilities').html()) > 0) {
+	  		input += Number($('#showUtilities').html());
+	  	}
+		    $('#showUtilities').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "coffee":
-	    $('#showCoffee').append(input);
-	    break;
+	    if (Number($('#showCoffee').html()) > 0) {
+	  		input += Number($('#showCoffee').html());
+	  	}
+		    $('#showCoffee').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "fitness":
-	    $('#showFitness').append(input);
-	    break;
+	  	if (Number($('#showFitness').html()) > 0) {
+	  		input += Number($('#showFitness').html());
+	  	}
+		    $('#showFitness').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  case "savings":
-	  	$('#showSavings').append(input);
-	  	break;
+	  	if (Number($('#showSavings').html()) > 0) {
+	  		input += Number($('#showSavings').html());
+	  	}
+		    $('#showSavings').html(input);
+		    input = Number($('#input2').val());
+		  	break;
 	  case "alcohol":
-	    $('#showAlcohol').append(input);
-	    break;
+	  	if (Number($('#showAlcohol').html()) > 0) {
+	  		input += Number($('#showAlcohol').html());
+	  	}
+		    $('#showAlcohol').html(input);
+		    input = Number($('#input2').val());
+		    break;
 	  default:
 	    console.log("Default case works");
 	}
+
 	income = income - input;
-	$('#showIncome').append(income);
+	$('#showIncome').html(income);
 }
 
 $('#submit').on('click', listIncome);
