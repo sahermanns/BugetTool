@@ -1,63 +1,64 @@
-function test() {
-	console.log($('#input1').val());
+var objPrice = $('#input2').val();
+
+var category = $('#select1').val();
+
+
+function listIncome() {
+	var income = $('#input1').val();
+ 	$('#showIncome').append(income);
 }
 
+function outputResults() {
+	var answer = $('#select1').val();
+	var input = $('#input2').val();
+	var income = $('#input1').val();
 
-$('#test').on('click', test);
+	switch (answer) {
+	  case "food":
+	    $('#showFood').append(input);
+	    break;
+	  case "entertainment":
+	    $('#showEntertainment').append(input);
+	    break;
+	  case "transportation":
+	    $('#showTransportation').append(input);
+	    break;
+	  case "fixed":
+	    $('#showFixed').append(input);
+	    break;
+	  case "mortgage":
+	  	$('#showMortgage').append(input);
+	  	break;
+	  case "utilities":
+	    $('#showUtilities').append(input);
+	    break;
+	  case "coffee":
+	    $('#showCoffee').append(input);
+	    break;
+	  case "fitness":
+	    $('#showFitness').append(input);
+	    break;
+	  case "savings":
+	  	$('#showSavings').append(input);
+	  	break;
+	  case "alcohol":
+	    $('#showAlcohol').append(input);
+	    break;
+	  default:
+	    console.log("Default case works");
+	}
+	income = income - input;
+	$('#showIncome').append(income);
+}
 
-$(function () {
+$('#submit').on('click', listIncome);
+$('#add').on('click', outputResults);
 
-    $(document).ready(function () {
 
-        // Build the chart
-        $('#container').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-            legend: {
-            align: 'right',
-            verticalAlign: 'top',
-            layout: 'vertical',
-            x: -50,
-            y: 130
-        	},
 
-            title: {
-                text: 'How You Are Spending Your Money'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                type: 'pie',
-                name: 'Expense %',
-                data: [
-                    ['Mortgage',   45],
-                    ['IE',       26.8],
-                    {
-                        name: 'Chrome',
-                        y: 12.8,
-                        sliced: true,
-                        selected: true
-                    },
-                    ['Safari',    8.5],
-                    ['Opera',     6.2],
-                    ['Others',   0.7]
-                ]
-            }]
-        });
-    });
 
-});
+
+
+
+
+
