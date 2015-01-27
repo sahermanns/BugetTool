@@ -1,6 +1,8 @@
 <html>
 	<head>
     <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="960.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
 	</head>
   <body>
   <header>
@@ -27,19 +29,58 @@
 				<option value="alcohol">Alcohol</option>
 			</select>
 		<button id="add">Add Item</button>
-		<section id="showIncome">Starting Money&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showFood">Food&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showEntertainment">Entertainment&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showTransportation">Transportation&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showFixed">Fixed Debt&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showMortgage">Mortgage&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showUtilities">Utilities&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showCoffee">Coffee&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showFitness">Fitness&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showSavings">Savings&nbsp;&nbsp;&nbsp;$</section>
-		<section id="showAlcohol">Alcohol&nbsp;&nbsp;&nbsp;$</section>
-		 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="moneybags.js"></script>
-</body>
+
+  <table style="width:30%">
+    <tr class="green">
+      <td>Starting Money:&nbsp;&nbsp;&nbsp;$<span id="showIncome"></span></td>
+    </tr>
+    <tr class="green">
+      <td>Remaining Money:&nbsp;&nbsp;&nbsp;$<span id="showRemaining"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
+      <td>%of total</td>
+    </tr>
+    <tr class="red">
+      <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Savings:&nbsp;&nbsp;&nbsp;$<span id="showSavings"></span></td>
+      <td>% of total</td>
+    </tr>
+    <tr class="red">
+      <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
+      <td>% of total</td>
+    </tr>
+  </table>
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="moneybags.js"></script>
+  </body>
 </html>
