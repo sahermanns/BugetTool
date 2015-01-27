@@ -66,3 +66,20 @@ input {
 select {
 	margin-top: 10px;
 }
+ul.userInputs {
+	float: left;
+	font-size: 1.5em;
+	margin-left: 50px;
+}
+table.categories {
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+h1.mainhead {
+	font-size: 4em;
+	text-align: center;
+	margin-top: 20px
+	margin-bottom: 20px;
+}
+

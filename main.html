@@ -6,80 +6,88 @@
 	</head>
   <body>
   <header>
-    <h1 id="mainhead">Welcome To Money Bags</h1>
+    <h1 class="mainhead">Welcome To Money Bags</h1>
   </header>
-  <ul>
-    <li id="income">Monthly Income</li>
-      <input id="input1"></input>
-    <button id="submit">Submit</button>
-   	<li id="price">Object Price</li>
-    	<input id="input2"></input>
-   	<li id="category">Category</li>
-    	<select id="select1">
-				<option value="choose">-- Choose One--</option>
-				<option value="food">Food</option>
-				<option value="entertainment">Entertainment</option>
-				<option value="transportation">Transportation</option>
-				<option value="fixed">Fixed Debt</option>
-				<option value="mortgage">Mortgage/Rent</option>
-				<option value="utilities">Utilities</option>
-				<option value="coffee">Coffee</option>
-				<option value="fitness">Fitness</option>
-				<option value="savings">Savings</option>
-				<option value="alcohol">Alcohol</option>
-			</select>
-		<button id="add">Add Item</button>
-
-  <table style="width:30%">
-    <tr class="green">
-      <td>Starting Money:&nbsp;&nbsp;&nbsp;$<span id="showIncome"></span></td>
-    </tr>
-    <tr class="green">
-      <td>Remaining Money:&nbsp;&nbsp;&nbsp;$<span id="showRemaining"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
-      <td>%of total</td>
-    </tr>
-    <tr class="red">
-      <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Savings:&nbsp;&nbsp;&nbsp;$<span id="showSavings"></span></td>
-      <td>% of total</td>
-    </tr>
-    <tr class="red">
-      <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
-      <td>% of total</td>
-    </tr>
-  </table>
-	
+    <ul class="userInputs">
+      <li id="income">Monthly Income</li>
+        <input id="input1"></input>
+      <button id="submit">Submit</button>
+     	<li id="price">Object Price</li>
+      	<input id="input2"></input>
+     	<li id="category">Category</li>
+      	<select id="select1">
+  				<option value="choose">-- Choose One--</option>
+  				<option value="food">Food</option>
+  				<option value="entertainment">Entertainment</option>
+  				<option value="transportation">Transportation</option>
+  				<option value="fixed">Fixed Debt</option>
+  				<option value="mortgage">Mortgage/Rent</option>
+  				<option value="utilities">Utilities</option>
+  				<option value="coffee">Coffee</option>
+  				<option value="fitness">Fitness</option>
+  				<option value="savings">Savings</option>
+  				<option value="alcohol">Alcohol</option>
+  			</select>
+  		<button id="add">Add Item</button>
+    </ul>
+    <table class="categories" style="width:30%">
+      <tr class="green">
+        <td>Starting Money:&nbsp;&nbsp;&nbsp;$<span id="showIncome"></span></td>
+      </tr>
+      <tr class="green">
+        <td>Savings:&nbsp;&nbsp;&nbsp;$<span id="showSavings"></span></td>
+        <td>Percentage:</td>
+        <td id="barSav"></td>
+      </tr>
+      <tr class="red">
+        <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
+        <td>Percentage:</td>
+        <td id="barFood"></td>
+      </tr>
+      <tr class="red">
+        <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
+        <td>Percentage:</td>
+        <td id="barEnter"></td>
+      </tr>
+      <tr class="red">
+        <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
+        <td>Percentage:</td>
+        <td id="barTrans"></td>
+      </tr>
+      <tr class="red">
+        <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
+        <td>Percentage:</td>
+        <td id="barFixed"></td>
+      </tr>
+      <tr class="red">
+        <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
+        <td>Percentage:</td>
+        <td id="barMort"></td>
+      </tr>
+      <tr class="red">
+        <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
+        <td>Percentage:</td>
+        <td id="barUtil"></td>
+      </tr>
+      <tr class="red">
+        <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
+        <td>Percentage:</td>
+        <td id="barCoff"></td>
+      </tr>
+      <tr class="red">
+        <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
+        <td>Percentage:</td>
+        <td id="barFit"></td>
+      </tr>
+      <tr class="red">
+        <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
+        <td>Percentage:</td>
+        <td id="barAlc"></td>
+      </tr>
+    </table>
+    <footer>
+    <a href="savetips.html">Click here for Saving Tips</a>
+	  </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="moneybags.js"></script>
   </body>
