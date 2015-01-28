@@ -16,7 +16,7 @@ function outputResults() {
 		  if (Number($('#showFood').html()) > 0) {
 		  	input += Number($('#showFood').html());
 		  }
-		    console.log($('#showFood').html(input));
+		    $('#showFood').html(input);
 		    input = Number($('#input2').val());
 		    break;
 	  case "entertainment":
@@ -88,10 +88,18 @@ function outputResults() {
 
 	income = income - input;
 	$('#showIncome').html(income);
+
+	$('#savFood').html((($('#showFood').html()) / ($('#input1').val())) * 100);
+	$('#barFood').css({width : $('#savFood').html() + "px"});
 }
 
 $('#submit').on('click', listIncome);
 $('#add').on('click', outputResults);
+
+
+
+
+
 
 
 
