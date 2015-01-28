@@ -89,8 +89,23 @@ function outputResults() {
 	income = income - input;
 	$('#showIncome').html(income);
 
+	$('#savPercent').html((($('#showSavings').html()) / ($('#input1').val())) * 100);
+	$('#barSavings').css({width : $('#savPercent').html() + "px"});
+	if ($('#barSavings') > "0") {
+		$('#barSavings').css({visibility: "visible"})
+	}
+
 	$('#savFood').html((($('#showFood').html()) / ($('#input1').val())) * 100);
 	$('#barFood').css({width : $('#savFood').html() + "px"});
+	if ($('#barFood') > "0") {
+		$('#barFood').css({visibility: "visible"})
+	}
+
+	$('#percentEnter').html((($('#showEntertainment').html()) / ($('#input1').val())) * 100);
+	$('#barEnter').css({width : $('#percentEnter').html() + "px"});
+	if ($('#barEnter') > "0") {
+		$('#barEnter').css({visibility: "visible"})
+	}
 }
 
 $('#submit').on('click', listIncome);
