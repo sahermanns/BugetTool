@@ -86,7 +86,7 @@ h1.mainhead {
 .graph {
 	height:20px;
     width:100px;
-    display: inline-block;
+    visibility: hidden;
     background-color: #0000FF;
 }
 
