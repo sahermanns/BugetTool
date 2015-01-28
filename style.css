@@ -5,15 +5,16 @@ body {
 	text-align: center;
 }
 #splashH1 {
+	color:LimeGreen; 
 	font-size: 5em;
 	text-align: center;
 	color: green;
 	margin-bottom: 10px;
 }
 #splashH2 {
-	font-family: Roboto;
+	color: MediumOrchid;
+	font-family:Roboto;
 	font-size:1em;
-	color: green;
 	text-align: center;
 }
 a.1, a.2 {
@@ -64,57 +65,58 @@ select {
 	margin-top: 10px;
 }
 ul.userInputs {
+	color: MediumOrchid;
+	font-family: Oswald;
+	font-weight: 400;
 	float: left;
 	text-align: left;
 	font-size: 2em;
 	margin-left: 60px;
 	width: 30%;
+	margin-top: 10px;
 }
 h1.mainhead {
-	font-size: 4em;
+	font-family: Anton;
+	font-weight: 700;
+	font-size: 5em;
 	text-align: center;
 	margin-top: 20px
 	margin-bottom: 10px;
 }
-
 .graph {
 	height:20px;
     width:500px;
     display: inline-block;
     visibility: hidden;
-    background-color: #0000FF;
+    background-color: RoyalBlue;
 }
 table.categories {
-	background-color: red;
+	font-family: Oswald;
+	font-weight: 400;
+	background-color: LightSteelBlue;
 	color: black;
 	border-top: 2px solid black;
 	width: 80%;
 	text-align: left;
 	margin-left: 100px;
 	margin-top: 20px;
+	border-color: black;
 }
 th {
 	text-align: center;
 	font-size: 1.5em;
 }
 table.topCategories {
-	background-color: green;
+	font-family: Oswald;
+	font-weight: 400;
+	background-color: LimeGreen;
+	color: black;
 	width: 40%;
 	text-align: left;
 	float: right;
 	margin-right: 150px;
-	margin-top: 50px;
+	margin-top: 20px;
 	font-size: 2em;	
 	border-color: black;
 }
 
-/*tr.green {
-	color: green;
-}
-tr.red {
-	color:red;
-}
-table.categories {
-	float: right;
-	margin: 20px;
-	margin-right: 20px;	*/
