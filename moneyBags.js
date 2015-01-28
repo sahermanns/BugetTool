@@ -106,6 +106,48 @@ function outputResults() {
 	if ($('#barEnter') > "0") {
 		$('#barEnter').css({visibility: "visible"})
 	}
+
+	$('#percentTrans').html((($('#showTransportation').html()) / ($('#input1').val())) * 100);
+	$('#barTrans').css({width : $('#percentTrans').html() + "px"});
+	if ($('#barTrans') > "0") {
+		$('#barTrans').css({visibility: "visible"})
+	}
+
+	$('#percentFixed').html((($('#showFixed').html()) / ($('#input1').val())) * 100);
+	$('#barFixed').css({width : $('#percentFixed').html() + "px"});
+	if ($('#barFixed') > "0") {
+		$('#barFixed').css({visibility: "visible"})
+	}
+
+	$('#percentMortgage').html((($('#showMortgage').html()) / ($('#input1').val())) * 100);
+	$('#barMort').css({width : $('#percentMortgage').html() + "px"});
+	if ($('#barMort') > "0") {
+		$('#barMort').css({visibility: "visible"})
+	}
+
+	$('#percentUtilities').html((($('#showUtilities').html()) / ($('#input1').val())) * 100);
+	$('#barUtil').css({width : $('#percentUtilities').html() + "px"});
+	if ($('#barUtil') > "0") {
+		$('#barUtil').css({visibility: "visible"})
+	}
+
+	$('#percentCoffee').html((($('#showCoffee').html()) / ($('#input1').val())) * 100);
+	$('#barCoff').css({width : $('#percentCoffee').html() + "px"});
+	if ($('#barCoff') > "0") {
+		$('#barCoff').css({visibility: "visible"})
+	}
+
+	$('#percentFit').html((($('#showFitness').html()) / ($('#input1').val())) * 100);
+	$('#barFit').css({width : $('#percentFit').html() + "px"});
+	if ($('#barFit') > "0") {
+		$('#barFit').css({visibility: "visible"})
+	}
+
+	$('#percentAlcohol').html((($('#showAlcohol').html()) / ($('#input1').val())) * 100);
+	$('#barAlc').css({width : $('#percentAlcohol').html() + "px"});
+	if ($('#barAlc') > "0") {
+		$('#barAlc').css({visibility: "visible"})
+	}
 }
 
 $('#submit').on('click', listIncome);
