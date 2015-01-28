@@ -5,11 +5,10 @@
     <link rel="stylesheet" type="text/css" href="style.css"> 
   </head>
   <body>
-  <div class="container_16">
   <header>
     <h1 class="mainhead">Welcome To Money Bags</h1>
   </header>
-    <ul class="userInputs">
+    <ul class="userInputs" class="clearfix">
       <li id="income">Monthly Income</li>
         <input id="input1"></input>
       <button id="submit">Submit</button>
@@ -31,65 +30,67 @@
         </select>
       <button id="add">Add Item</button>
     </ul>
-    <section class="clearfix">
-    <table class="categories" style="width:60%">
+    <table class="topCategories" border="2">
       <tr class="green">
-        <td>Starting Money:&nbsp;&nbsp;&nbsp;$<span id="showIncome"></span></td>
+        <td>Current Balance:&nbsp;&nbsp;&nbsp;$<span id="showIncome"></span></td>
       </tr>
       <tr class="green">
-        <td>Savings:&nbsp;&nbsp;&nbsp;$<span id="showSavings"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savPercent"></span></td>
-        <td id="barSav"><div id="barSavings" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savFood"></td>
-        <td id="barFood"><div id="barFood" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savEnter"></td>
-        <td id="barEnter"><div id="barEnter" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savTrans"></td>
-        <td id="barTrans"><div id="barTrans" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savFixed"></td>
-        <td id="barFixed"><div id="barFixed" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savMort"></td>
-        <td id="barMort"><div id="barMort" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savUtil"></td>
-        <td id="barUtil"><div id="barUtil" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savCoff"></td>
-        <td id="barCoff"><div id="barCoff" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savFit"></td>
-        <td id="barFit"><div id="barFit" class="graph"></div></td>
-      </tr>
-      <tr class="red">
-        <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
-        <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savAlc"></td>
-        <td id="barAlc"><div id="barAlc" class="graph"></div></td>
+        <td>Current Savings:&nbsp;&nbsp;&nbsp;$<span id="showSavings"></span></td>
       </tr>
     </table>
-    </section>
+    <table class="categories" border="1">
+     <tr>
+       <th width="200">Category</th>
+       <th width="200">Percentage</th>
+       <th width="600">Graph</th>
+     </tr>
+     <tr class="red">
+       <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savFood"></span>  </td>
+       <td><div id="barFood" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;</td>
+       <td><div id="barEnter" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barTrans" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barFixed" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barMort" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barUtil" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barCoff" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barFit" class="graph"></div></td>
+     </tr>
+     <tr class="red">
+       <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
+       <td>Percentage:</td>
+       <td><div id="barAlc" class="graph"></div></td>
+     </tr>
+    </table>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="moneybags.js"></script>
-  </div>
   </body>
 </html>

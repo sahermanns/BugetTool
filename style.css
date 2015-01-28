@@ -11,9 +11,13 @@ body {
 	margin-bottom: 10px;
 }
 #splashH2 {
+	font-family: Roboto;
 	font-size:1em;
 	color: green;
 	text-align: center;
+}
+a.1, a.2 {
+	font-family: Roboto;
 }
 #moneytree {
   width:35%;
@@ -30,8 +34,8 @@ body {
 	color: green;
 	text-align: center;
 }
-#list {
-	font-family: Verdana;
+ul.tips {
+	font-family: Roboto;
 	margin-left: 30px;
 	text-align:left;
 	font-size: 1.5em;
@@ -46,12 +50,6 @@ body {
 #showIncome {
 	margin-top: 30px;
 	margin-bottom: 20px;
-}
-tr.green {
-	color: green;
-}
-tr.red {
-	color:red;
 }
 li {
 	display: block;
@@ -68,36 +66,55 @@ select {
 ul.userInputs {
 	float: left;
 	text-align: left;
-	font-size: 1.5em;
-	margin-left: 50px;
-}
-table.categories {
-	float: right;
-	margin-right: 40px;
-	margin-top: 20px;
+	font-size: 2em;
+	margin-left: 60px;
+	width: 30%;
 }
 h1.mainhead {
 	font-size: 4em;
 	text-align: center;
 	margin-top: 20px
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .graph {
 	height:20px;
-    width:100px;
+    width:500px;
     display: inline-block;
+    visibility: hidden;
     background-color: #0000FF;
 }
-
 table.categories {
-	float: right;
-	margin-right: 40px;
+	background-color: red;
+	color: black;
+	border-top: 2px solid black;
+	width: 80%;
+	text-align: left;
+	margin-left: 100px;
 	margin-top: 20px;
 }
-h1.mainhead {
-	font-size: 4em;
+th {
 	text-align: center;
-	margin-top: 20px
-	margin-bottom: 20px;
+	font-size: 1.5em;
 }
+table.topCategories {
+	background-color: green;
+	width: 40%;
+	text-align: left;
+	float: right;
+	margin-right: 150px;
+	margin-top: 50px;
+	font-size: 2em;	
+	border-color: black;
+}
+
+/*tr.green {
+	color: green;
+}
+tr.red {
+	color:red;
+}
+table.categories {
+	float: right;
+	margin: 20px;
+	margin-right: 20px;	*/
