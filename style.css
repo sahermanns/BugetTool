@@ -32,12 +32,14 @@ a.1, a.2 {
 }
 #tipshead {
 	font-size: 4em;
-	color: green;
+	color: LimeGreen;
 	text-align: center;
 }
 ul.tips {
-	font-family: Roboto;
-	margin-left: 30px;
+	font-family: Oswald;
+	color: MediumOrchid; 
+	margin-left: 100px;
+	margin-right: 30px;
 	text-align:left;
 	font-size: 1.5em;
 }
@@ -88,7 +90,7 @@ h1.mainhead {
     width:500px;
     display: inline-block;
     visibility: hidden;
-    background-color: RoyalBlue;
+    background-color: DodgerBlue;
 }
 table.categories {
 	font-family: Oswald;
@@ -118,5 +120,21 @@ table.topCategories {
 	margin-top: 20px;
 	font-size: 2em;	
 	border-color: black;
+}
+table.longterm {
+	font-family: Oswald;
+	font-weight: 400;
+	color: LimeGreen;
+	width: 40%;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+p {
+	text-align: left;
+	font-family: Oswald;
+	font-weight: 400;
+	color: MediumOrchid;
+	margin-left: 100px;
+	font-size: 2em;
 }
 
