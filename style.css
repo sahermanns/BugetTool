@@ -90,3 +90,16 @@ h1.mainhead {
     background-color: #0000FF;
 }
 
+table.categories {
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+h1.mainhead {
+	font-size: 4em;
+	text-align: center;
+	margin-top: 20px
+	margin-bottom: 20px;
+}
+
+
