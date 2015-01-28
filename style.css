@@ -36,8 +36,9 @@ a.1, a.2 {
 	text-align: center;
 }
 ul.tips {
+	background-color: DarkGrey;
 	font-family: Oswald;
-	color: MediumOrchid; 
+	color: Purple; 
 	margin-left: 100px;
 	margin-right: 30px;
 	text-align:left;
