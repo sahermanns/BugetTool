@@ -2,7 +2,9 @@
   <head>
     <title>Main</title>
     <link rel="stylesheet" type="text/css" href="960.css">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
   </head>
   <body>
   <header>
@@ -40,56 +42,70 @@
     </table>
     <table class="categories" border="1">
      <tr>
-       <th width="200">Category</th>
-       <th width="200">Percentage</th>
-       <th width="600">Graph</th>
+       <th width="350">Category</th>
+       <th width="250">Percentage</th>
+       <th width="500">Graph</th>
      </tr>
      <tr class="red">
-       <td>Food:&nbsp;&nbsp;&nbsp;$<span id="showFood"></span></td>
-       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="savFood"></span>  </td>
+       <td>Food:&nbsp;&nbsp;$<span id="showFood"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentFood"></td>
        <td><div id="barFood" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Entertainment:&nbsp;&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
-       <td>Percentage:&nbsp;&nbsp;&nbsp;</td>
+       <td>Entertainment:&nbsp;&nbsp;$<span id="showEntertainment"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentEnter"></td>
        <td><div id="barEnter" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Transportation:&nbsp;&nbsp;&nbsp;$<span id="showTransportation"></span></td>
-       <td>Percentage:</td>
+       <td>Transportation:&nbsp;&nbsp;$<span id="showTransportation"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentTrans"></td>
        <td><div id="barTrans" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Fixed Debt:&nbsp;&nbsp;&nbsp;$<span id="showFixed"></span></td>
-       <td>Percentage:</td>
+       <td>Fixed Debt:&nbsp;&nbsp;$<span id="showFixed"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentFixed"></td>
        <td><div id="barFixed" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Mortgage:&nbsp;&nbsp;&nbsp;$<span id="showMortgage"></span></td>
-       <td>Percentage:</td>
+       <td>Mortgage:&nbsp;&nbsp;$<span id="showMortgage"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentMortgage"></td>
        <td><div id="barMort" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Utilities:&nbsp;&nbsp;&nbsp;$<span id="showUtilities"></span></td>
-       <td>Percentage:</td>
+       <td>Utilities:&nbsp;&nbsp;$<span id="showUtilities"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentUtilities"></td>
        <td><div id="barUtil" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Coffee:&nbsp;&nbsp;&nbsp;$<span id="showCoffee"></span></td>
-       <td>Percentage:</td>
+       <td>Coffee:&nbsp;&nbsp;$<span id="showCoffee"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentCoffee"></td>
        <td><div id="barCoff" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Fitness:&nbsp;&nbsp;&nbsp;$<span id="showFitness"></span></td>
-       <td>Percentage:</td>
+       <td>Fitness:&nbsp;&nbsp;$<span id="showFitness"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentFit"></td>
        <td><div id="barFit" class="graph"></div></td>
      </tr>
      <tr class="red">
-       <td>Alcohol:&nbsp;&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
-       <td>Percentage:</td>
+       <td>Alcohol:&nbsp;&nbsp;$<span id="showAlcohol"></span></td>
+       <td>Percentage:&nbsp;&nbsp;&nbsp;<span id="percentAlcohol"></td>
        <td><div id="barAlc" class="graph"></div></td>
      </tr>
     </table>
+    <p>Planning projections:</p>
+    <table class="longterm">
+      <tr>
+       <td width="100">You are on track to save</td>
+       <td width="50"><span id="monthlySave"/></td>
+       <td width="50">this month</td> 
+       <td><button id= "calculate1">Calculate</td>
+     </tr>
+     <tr>
+       <td>You are on track to save</td>
+       <td><span id="annualSave"/></td>
+       <td>this year</td> 
+       <td><button id= "calculate2">Caluclate</td>
+     </tr>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="moneybags.js"></script>
   </body>
