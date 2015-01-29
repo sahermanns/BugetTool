@@ -17,9 +17,6 @@ body {
 	font-size:1em;
 	text-align: center;
 }
-a.1, a.2 {
-	font-family: Roboto;
-}
 #moneytree {
   width:35%;
   height:auto;
@@ -84,7 +81,7 @@ h1.mainhead {
 	font-size: 5em;
 	text-align: center;
 	margin-top: 20px
-	margin-bottom: 10px;
+	margin-bottom: none;
 }
 .graph {
 	height:20px;
@@ -123,12 +120,14 @@ table.topCategories {
 	border-color: black;
 }
 table.longterm {
+	border-collapse: collapse;
+	overflow: hidden;	
 	font-family: Oswald;
 	font-weight: 400;
-	color: LimeGreen;
-	width: 40%;
+	color: DodgerBlue;
 	margin-left: 100px;
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
 p {
 	text-align: left;
@@ -138,4 +137,10 @@ p {
 	margin-left: 100px;
 	font-size: 2em;
 }
-
+#monthlySave, #annualSave {
+	color: LimeGreen;
+	font-size: 2.5em;
+}
+#footer {
+	margin-bottom: 20px;	
+}
