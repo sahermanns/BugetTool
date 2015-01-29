@@ -42,8 +42,8 @@
     </table>
     <table class="categories" border="1">
      <tr>
-       <th width="350">Category</th>
-       <th width="250">Percentage</th>
+       <th width="200">Category</th>
+       <th width="150">Percentage</th>
        <th width="500">Graph</th>
      </tr>
      <tr class="red">
@@ -92,18 +92,26 @@
        <td><div id="barAlc" class="graph"></div></td>
      </tr>
     </table>
-    <p>Planning projections:</p>
-    <table class="longterm">
+    <p>Planning projections</p>
+    <table class="longterm" cellpadding="5px">
+      <td></td>
       <tr>
-       <td width="100">You are on track to save</td>
-       <td width="50"><span id="monthlySave"></td>
-       <td width="50">this month</td> 
+       <td width="100">You are on track to save $</td>
+       <td><span id="monthlySave"/></td>
+       <td width="75">this month</td> 
+       <td><button id= "calculate1">Calculate</td>
      </tr>
      <tr>
-       <td>You are on track to save</td>
-       <td><span id="annualSave"></td>
+       <td>You are on track to save $</td>
+       <td><span id="annualSave"/></td>
        <td>this year</td> 
+       <td><button id= "calculate2">Caluclate</td>
      </tr>
+   </table>
+   <section id="footer">
+      <a href=""savetips.html"">Tips/</a>
+      <a href=""splash.html"">Home</a>
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="moneybags.js"></script>
   </body>

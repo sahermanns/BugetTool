@@ -156,9 +156,20 @@ function outputResults() {
   }
 }
 
+function annualSave() {
+  var value = ($('#showSavings').html() * 12);
+  $('#annualSave').html(value);
+}
+
+function monthlySave() {
+  var value = $('#showSavings').html();
+  $('#monthlySave').html(value);
+}
+
 $('#submit').on('click', listIncome);
 $('#add').on('click', outputResults);
-
+$('#calculate2').on('click', annualSave);
+$('#calculate1').on('click', monthlySave);
 
 
 
